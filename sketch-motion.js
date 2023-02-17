@@ -1,5 +1,5 @@
 /*Julia Correia || May 2022
-Interactive Art Piece Displaying the Dangers of Plastic Pollution
+Interactive Art Piece Displaying the Dangers of Plastic Pollution*/
 
 let poseNet;
 let front, back, mask, imgR, imgL, hole = 250;

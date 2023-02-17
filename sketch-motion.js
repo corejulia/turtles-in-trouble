@@ -1,8 +1,5 @@
-/*Julia Correia || January 2021
+/*Julia Correia || May 2022
 Interactive Art Piece Displaying the Dangers of Plastic Pollution
-
-Last Editted: August 2021
-Added PoseNet Library to create a hands free interaction for large scale installations */
 
 let poseNet;
 let front, back, mask, imgR, imgL, hole = 250;
@@ -94,20 +91,14 @@ draw = () => {
     imgL.copy(back, handL.x - hole / 2, handL.y - hole / 2, hole, hole, 0, 0, hole, hole);
     
     //mask hole to make it circular
-    
-    //start of code from https://stackoverflow.com/questions/49715907/masking-or-clipping-mask-with-p5-js
     imgR.mask(circle);
     imgL.mask(circle);
-    //end of code from https://stackoverflow.com/questions/49715907/masking-or-clipping-mask-with-p5-js
     
     
     //draw copied image around cursor location over the background 
-	image(imgR, handR.x - hole / 2, handR.y - hole / 2, [hole], [hole]);
+    image(imgR, handR.x - hole / 2, handR.y - hole / 2, [hole], [hole]);
     image(imgL, handL.x - hole / 2, handL.y - hole / 2, [hole], [hole]);
     
-    if (mouseIsPressed) {
-        background(back);
-    }
     
     //create and animate bubbles
     for (let i = 0; i < bubbles.length; i++) {

@@ -66,17 +66,11 @@ draw = () => {
     
     
     //mask hole to make it circular
-    
-    //start of code from https://stackoverflow.com/questions/49715907/masking-or-clipping-mask-with-p5-js
     img.mask(circle);
-    //end of code from https://stackoverflow.com/questions/49715907/masking-or-clipping-mask-with-p5-js
     
     
     //draw copied image around cursor location over the background
-    
-    //start of code learned from https://p5js.org/reference/#/p5/image
 	image(img, mouseX - hole / 2, mouseY - hole / 2, [hole], [hole]);
-    //end of code learned from https://p5js.org/reference/#/p5/image
     
     
     //create and animate bubbles

@@ -112,7 +112,6 @@ function windowResized() {
         resizeCanvas(windowWidth, windowWidth*0.624);
         back.resize(windowWidth, windowWidth*0.624);
         x = 850/windowWidth;
-        console.log("blah");
         hole=hole/x;
     } else if(windowWidth >= 1363) {
         createCanvas(1363, 850);
